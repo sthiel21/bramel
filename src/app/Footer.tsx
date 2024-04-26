@@ -20,6 +20,15 @@ function Footer() {
         marginTop: "3em" /* Diese Zeile anpassen oder entfernen */,
       }}
     >
+      
+      {/* Impressum Button */}
+      {/* <Button variant="text" sx={{ color: "white" }}>
+        Impressum
+      </Button> */}
+      {/* Datenschutz Button */}
+      <Button variant="text" sx={{ color: "white" }}>
+        Datenschutz
+      </Button>
       {/* Instagram Icon */}
       <InstagramIcon
         sx={{ color: "white", cursor: "pointer" }}
@@ -27,14 +36,6 @@ function Footer() {
           window.open("https://www.instagram.com/tsv_bramel/", "_blank")
         }
       />
-      {/* Impressum Button */}
-      <Button variant="text" sx={{ color: "white" }}>
-        Impressum
-      </Button>
-      1{/* Datenschutz Button */}
-      <Button variant="text" sx={{ color: "white" }}>
-        Datenschutz
-      </Button>
       {/* Copyright Text */}
       <Box sx={{ marginRight: "2em", color: "white" }}>
         &copy; Copyright TSV Bramel

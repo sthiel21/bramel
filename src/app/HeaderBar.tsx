@@ -13,7 +13,7 @@ import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 
-const pages = ["Über TSV Bramel", "Hallenplan", "Geschichte"];
+const pages = ["Über TSV Bramel",/* "Hallenplan",*/ "Über uns", "Vorstand", "Termine 2024", "Downloads"];
 const vereinsbereicheOptions = [
   "Arbeitsdienst",
   "Boden- und Geräteturnen",
@@ -92,12 +92,11 @@ function ResponsiveAppBar() {
             </Button>
           ))}
 
-          {/* Dropdown "Vereinsbereiche" */}
           <Button
-            onClick={handleOpenVereinsbereicheMenu}
-            sx={{ my: 2, color: "white", display: "block", marginBottom: "1.57em", marginLeft: "0.9em"}}
+            onMouseEnter={handleOpenVereinsbereicheMenu}
+            sx={{ my: 2, color: "white", display: "block",/* marginBottom: "1.57em",*/ marginLeft: "0.9em"}}
           >
-            Vereinsbereiche <ArrowDropDownIcon />
+            Unsere Abteilungen
           </Button>
           <Menu
             id="menu-vereinsbereiche"
